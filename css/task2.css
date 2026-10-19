@@ -1,0 +1,98 @@
+:root {
+  --green: #0F6B5F;
+  --amber: #F2A93B;
+  --ink: #16302B;
+  --paper: #F4F7F5;
+  --mist: #E6EFEC;
+  --danger: #dc3545;
+}
+
+body {
+  background-color: var(--mist);
+  color: var(--ink);
+}
+
+.hack-card {
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 1rem 2.5rem rgba(22, 48, 43, 0.15);
+  overflow: hidden;
+}
+
+.hack-header {
+  background-color: var(--green);
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.hack-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+legend.form-label {
+  float: none;
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--paper);
+  border-radius: 0.6rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+
+.form-control:user-invalid,
+.form-select:user-invalid,
+.form-check-input:user-invalid {
+  border-color: var(--danger);
+}
+
+.form-control:user-valid,
+.form-select:user-valid {
+  border-color: var(--green);
+}
+
+.form-control:user-invalid ~ .invalid-feedback,
+.form-select:user-invalid ~ .invalid-feedback,
+.form-check-input:user-invalid ~ .invalid-feedback,
+.radio-group:has(.form-check-input:user-invalid) .invalid-feedback {
+  display: block;
+}
+
+.form-check-input:user-invalid ~ .form-check-label {
+  color: var(--danger);
+}
+
+.btn-register {
+  background-color: var(--amber);
+  border: 1.5px solid var(--amber);
+  border-radius: 50rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.65rem 2rem;
+}
+
+.btn-register:hover {
+  background-color: #e09a2c;
+  border-color: #e09a2c;
+  color: #fff;
+}

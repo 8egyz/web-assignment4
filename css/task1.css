@@ -1,0 +1,195 @@
+:root {
+  --green: #0F6B5F;
+  --amber: #F2A93B;
+  --ink: #16302B;
+  --paper: #F4F7F5;
+  --mist: #E6EFEC;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--mist);
+  color: var(--ink);
+}
+
+.booking-card {
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 1rem 2.5rem rgba(22, 48, 43, 0.15);
+  overflow: hidden;
+}
+
+.booking-header {
+  background-color: var(--green);
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.booking-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.booking-body {
+  padding-top: 1.5rem;
+}
+
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  float: none;
+}
+
+
+.form-control,
+.form-select {
+  background-color: var(--paper);
+  border: 1px solid var(--mist);
+  border-radius: 0.75rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+}
+
+.form-control::placeholder {
+  color: #8a9c97;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--paper);
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+  color: var(--ink);
+}
+
+
+.form-floating > .form-control {
+  height: 3.4rem;
+  min-height: 3.4rem;
+  padding: 1.5rem 0.9rem 0.4rem;
+}
+
+.form-floating > label {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.8rem;
+  color: #6b7f7a;
+  transform: scale(0.82) translateY(-0.5rem) translateX(0.1rem);
+}
+
+.form-floating > .form-control::placeholder {
+  color: var(--ink);
+  opacity: 1;
+}
+
+
+.trip-toggle .trip-option {
+  background-color: #fff;
+  border: 1.5px solid var(--green);
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.45rem 1.4rem;
+}
+
+.trip-toggle .trip-option:first-of-type {
+  border-radius: 50rem 0 0 50rem;
+}
+
+.trip-toggle .trip-option:last-of-type {
+  border-radius: 0 50rem 50rem 0;
+}
+
+.trip-toggle .btn-check:checked + .trip-option {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.trip-toggle .btn-check:focus-visible + .trip-option {
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.3);
+}
+
+@media (max-width: 575.98px) {
+  .trip-toggle {
+    display: flex;
+    width: 100%;
+  }
+  .trip-toggle .trip-option {
+    flex: 1;
+  }
+}
+
+
+legend.form-label {
+  display: block;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.form-check-label {
+  font-size: 0.8rem;
+}
+
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.form-check-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.25);
+}
+
+
+.input-group-text {
+  background-color: var(--green);
+  border-color: var(--green);
+  border-radius: 0.75rem 0 0 0.75rem;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.input-group > .form-control {
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+
+.btn-clear,
+.btn-find {
+  border-radius: 50rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.65rem 1.6rem;
+}
+
+.btn-clear {
+  background-color: #fff;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+}
+
+.btn-clear:hover {
+  background-color: var(--paper);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.btn-find {
+  background-color: var(--amber);
+  border: 1.5px solid var(--amber);
+  color: #fff;
+}
+
+.btn-find:hover {
+  background-color: #e09a2c;
+  border-color: #e09a2c;
+  color: #fff;
+}
+
+.btn-clear:focus-visible,
+.btn-find:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.3);
+}
